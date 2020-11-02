@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Dog Pics</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header><h1>Want a random dog pic of a certain breed to brighten up your day?</h1></header>
+  <form>
+    <label for="dog">Please enter a breed: </label><br>
+    <input type="text" name="dog" class="js-breed" autofocus="on" placeholder="hound" required/>
+    <hr>
+    <button type="submit" id="button">Click here!</button>  
+  </form>
+  <hr>
+  <div class="group">
+    <div class="item js-dog-pic-container dog-pic-container"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>

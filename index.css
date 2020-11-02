@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+/* SECTIONS */
+
+body {
+background-color: green;
+}
+
+hr {
+  border-width: 0px;
+}
+
+/* TYPOGRAPHY */
+
+h1, h2, form, label, button {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: orange;
+  text-align: center;
+}
+
+form, label, button {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 24px;
+  padding-bottom: 5px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+label {
+  font-size: 18px;
+  line-height: 36px;
+  padding-top: 36px;
+}
+
+/* BUTTONS */
+
+button {
+  font-size: 18px;
+  color: green;
+  text-align: center;
+  background-color: orange;
+  margin-top: 5px;
+  border-radius: 5px;
+  border-width: 0px;
+  box-shadow: 2px 2px 0px 0px #fff;
+}
+
+/* CLASSES */
+
+.group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+
+.item {
+  flex: 1;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  align-self: center;
+}
+
+.dog-pic-container img {
+  width: 100%;
+  padding: 5px;
+  margin: 0;
+  flex-shrink: 0;
+  align-self: center; 
+}
+
+/* MEDIA QUERIES */
+  
+@media all and (min-width: 600px) {
+  .group {
+    flex-direction: column;
+  } 
+
+  .item {
+    flex: 2;
+  }   
+
+  .dog-pic-container img {
+    padding: 10px;  
+  }
+
+}
