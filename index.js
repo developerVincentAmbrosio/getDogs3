@@ -19,11 +19,11 @@ function getDogPicListener() {
 }
 
 function renderImageUrl(url){
-  $('.js-dog-pic-container').append(dogPicTemplate(url)).html();
+  $('.js-dog-pic-container').replaceWith(dogPicTemplate(url)).html();
 }
 
 function dogPicTemplate(imageUrl) {
-  return `<img src='${imageUrl}'/>`;
+  return `<img src="${imageUrl}" class="js-dog-pic-container">`;
 }
 
 $(function() {
